@@ -2,7 +2,7 @@ $(function () {
     $(
         "#contactForm input,#contactForm textarea,#contactForm button"
     ).jqBootstrapValidation({
-        preventSubmit: true,
+        preventSubmit: false,
         submitError: function ($form, event, errors) {
             // additional error messages or events
         },
