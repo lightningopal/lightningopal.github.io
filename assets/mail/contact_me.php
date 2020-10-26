@@ -17,10 +17,5 @@ $header = "From: no-reply@lightningopalgames.com\n"; // This is the email addres
 $header .= "Reply-To: $email";	
 
 if(!mail($to, $subject, $body, $header))
-{
-  echo "<script>console.log('owo');</script>";
   http_response_code(500);
-}
-  else
-    echo "<script>console.log('awa' );</script>";
 ?>
